@@ -15,4 +15,8 @@ public class DayElement {
 
     @JacksonXmlProperty(isAttribute = true, localName = "t")
     private int type;
+
+    public boolean isHoliday() {
+        return type == 1;
+    }
 }
